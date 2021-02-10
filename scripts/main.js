@@ -1,0 +1,1 @@
+"use strict";localStorage.getItem("c")||$(".app-coockie").removeClass("app-coockie-hide"),$("button").on("click",function(){$(".app-coockie").addClass("app-coockie-hide"),localStorage.setItem("c","1")});

@@ -1,0 +1,137 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+html, body {
+  overflow: hidden;
+  width: 100%;
+  height: -webkit-fill-available;
+}
+
+.block-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.app {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  background: #271d1c;
+  display: block;
+  height: 100vh;
+  /* Fallback for browsers that do not support Custom Properties */
+  text-decoration: none;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+.app-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  -webkit-animation: over 1s ease;
+          animation: over 1s ease;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes over {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: .5;
+  }
+}
+
+@keyframes over {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: .5;
+  }
+}
+
+.app-title {
+  position: absolute;
+  left: 20%;
+  top: 40%;
+  color: white;
+  font-size: 2.5vw;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+
+.app-title h4 {
+  font-weight: 100;
+}
+
+.app-button {
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  border: 1px solid white;
+  -webkit-transition: all ease .4s;
+  transition: all ease .4s;
+  border-radius: 10px;
+}
+
+.app-button:hover {
+  background: #e4e4e4;
+}
+
+.app-button:hover a {
+  color: #1f1f1f;
+}
+
+.app-button a {
+  -webkit-transition: all ease .4s;
+  transition: all ease .4s;
+  color: white;
+  text-decoration: none;
+  font-weight: 100;
+  display: block;
+  padding: 10px 100px;
+  font-size: 1.5vw;
+}
+
+.app-coockie {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.863);
+  padding: 10px;
+  -webkit-transition: all ease .5s;
+  transition: all ease .5s;
+}
+
+.app-coockie p {
+  font-weight: 100;
+  color: #999999;
+}
+
+.app-coockie p a {
+  color: white;
+}
+
+.app-coockie button {
+  padding: 5px 20px;
+}
+
+.app-coockie-hide {
+  bottom: -100%;
+}
